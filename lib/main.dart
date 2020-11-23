@@ -11,10 +11,6 @@ class ProfileScreen extends StatefulWidget {
   _ProfileScreenState createState() => _ProfileScreenState();
 }
 
-Widget build(BuildContext context) {
-  return Image(image: AssetImage('imagen/mapa_empatia'));
-}
-
 class _ProfileScreenState extends State<ProfileScreen> {
   Color colorLink = Colors.black;
 
@@ -47,14 +43,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         ]),
                   ),
                   RichText(
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.start,
                     text: TextSpan(
                         style: TextStyle(color: Colors.black, fontSize: 10),
                         children: <TextSpan>[
                           TextSpan(),
                           TextSpan(
-                              text: 'John James Grisales Cano; Rubén D. Cárdenas (Asesor); Fabio A. López (L. Semillero)' +
-                                  'UNIVERSIDAD DE CALDAS – Tecnología en Sistemas Informáticos' +
+                              text: 'John James Grisales Cano; Rubén D. Cárdenas (Asesor); Fabio A. López (L. Semillero) ' +
+                                  ' UNIVERSIDAD DE CALDAS – Tecnología en Sistemas Informáticos' +
                                   '\n\n\n',
                               style:
                                   TextStyle(color: Colors.black, fontSize: 15)),
@@ -69,70 +65,70 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         color: Colors.black, fontSize: 10)),
                                 TextSpan(
                                     text:
-                                        'desarrollar un sistemas de información para el control de inventarios adaptado alas empresas manufactureras.',
+                                        ' desarrollar un sistemas de información para el control de inventarios adaptado alas empresas manufactureras. ',
                                     style: TextStyle(
                                         color: Colors.blueAccent,
                                         fontSize: 10)),
                                 TextSpan(
                                     text:
-                                        'La metodología empleada corresponde a una',
+                                        ' La metodología empleada corresponde a una ',
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 10)),
                                 TextSpan(
-                                    text: 'investigación experimental',
+                                    text: ' investigación experimental ',
                                     style: TextStyle(
                                         color: Colors.blueAccent,
                                         fontSize: 10)),
                                 TextSpan(
-                                    text: 'con un ',
+                                    text: ' con un ',
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 10)),
                                 TextSpan(
-                                    text: 'enfoque analítico y descriptivo',
+                                    text: ' enfoque analítico y descriptivo ',
                                     style: TextStyle(
                                         color: Colors.blueAccent,
                                         fontSize: 10)),
                                 TextSpan(
-                                    text: 'desarrollado en 4 fases:',
+                                    text: ' desarrollado en 4 fases: ',
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 10)),
                                 TextSpan(
                                     text:
-                                        'Análisis, Diseño, Implementación y Evaluación.',
+                                        ' Análisis, Diseño, Implementación y Evaluación. ',
                                     style: TextStyle(
                                         color: Colors.blueAccent,
                                         fontSize: 10)),
                                 TextSpan(
-                                    text: 'El',
+                                    text: ' El ',
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 10)),
                                 TextSpan(
-                                    text: 'resultado esperado',
+                                    text: ' resultado esperado ',
                                     style: TextStyle(
                                         color: Colors.blueAccent,
                                         fontSize: 10)),
                                 TextSpan(
-                                    text: 'es el desarrollo de un',
+                                    text: ' es el desarrollo de un ',
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 10)),
                                 TextSpan(
-                                    text: 'prototipo funcional del sistema',
-                                    style: TextStyle(
-                                        color: Colors.blueAccent,
-                                        fontSize: 10)),
-                                TextSpan(
-                                    text:
-                                        'para llevar acabo un buen control  y una confiablidad de inventarios es',
-                                    style: TextStyle(
-                                        color: Colors.black, fontSize: 10)),
-                                TextSpan(
-                                    text: 'comercializar el prototipo',
+                                    text: ' prototipo funcional del sistema ',
                                     style: TextStyle(
                                         color: Colors.blueAccent,
                                         fontSize: 10)),
                                 TextSpan(
                                     text:
-                                        'del sistema Palabras clave: base de datos, inventarios, confiablidad, controles, sistema de información+ \n\n',
+                                        ' para llevar acabo un buen control  y una confiablidad de inventarios es ',
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10)),
+                                TextSpan(
+                                    text: ' comercializar el prototipo ',
+                                    style: TextStyle(
+                                        color: Colors.blueAccent,
+                                        fontSize: 10)),
+                                TextSpan(
+                                    text:
+                                        ' del sistema Palabras clave: base de datos, inventarios, confiablidad, controles, sistema de información\n\n',
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 10)),
                               ]),
@@ -145,22 +141,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         children: <TextSpan>[
                           TextSpan(),
                           TextSpan(
-                              text: 'PLAN DEL PROBLEMA' '\n\n',
+                              text: ' PLAN DEL PROBLEMA ' '\n\n',
                               style:
                                   TextStyle(color: Colors.black, fontSize: 15)),
                           TextSpan(
                               text:
-                                  '¿Cómo desarrollar un sistemas de información para llevar el buen manejo de inventarios?' +
-                                      '\n\n',
+                                  ' ¿Cómo desarrollar un sistemas de información para llevar el buen manejo de inventarios? '
+                                  '\n\n',
                               style: TextStyle(
                                   color: Colors.blueAccent, fontSize: 10)),
                           TextSpan(
-                              text: 'OBJETIVO GENERAL' '\n\n',
+                              text: ' OBJETIVO GENERAL ' '\n\n',
                               style:
                                   TextStyle(color: Colors.black, fontSize: 15)),
                           TextSpan(
                               text:
-                                  'Desarrollar un sistemas de información  que apoye a las empresas a llevar buenos inventarios y buena confiabilidad' +
+                                  ' Desarrollar un sistemas de información  que apoye a las empresas a llevar buenos inventarios y buena confiabilidad ' +
                                       '\n\n',
                               style: TextStyle(
                                   color: Colors.blueAccent, fontSize: 10)),
@@ -194,11 +190,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   color: Colors.blueAccent, fontSize: 15)),
                           TextSpan(
                               text:
-                                  'la aplicación diseñada a través de lenguajes de programación JavaScript, base de datos SQL y utilizar un entorno de desarrollo integrado con la creación del  crud:',
+                                  'la aplicación diseñada a través de lenguajes de programación JavaScript, base de datos SQL y utilizar un entorno de desarrollo integrado con la creación del  crud:'
+                                  '\n\n',
                               style:
                                   TextStyle(color: Colors.black, fontSize: 10)),
                           TextSpan(
-                              text: '4.Evaluar:' + '\n\n',
+                              text: ' 4.Evaluar: ' + '\n\n',
                               style: TextStyle(
                                   color: Colors.blueAccent, fontSize: 15)),
                           TextSpan(
@@ -220,39 +217,87 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   color: Colors.blueAccent, fontSize: 10),
                               children: <TextSpan>[
                                 TextSpan(
-                                    text: 'Investigación Experimental',
+                                    text: ' Investigación Experimental ',
                                     style: TextStyle(
                                         color: Colors.blueAccent,
                                         fontSize: 10)),
                                 TextSpan(
-                                    text: 'con',
+                                    text: ' con ',
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 10)),
                                 TextSpan(
-                                    text: 'enfoque analítico y descriptivo',
+                                    text: ' enfoque analítico y descriptivo ',
                                     style: TextStyle(
                                         color: Colors.blueAccent,
                                         fontSize: 10)),
                                 TextSpan(
-                                    text: 'desarrollada en 4 fases: ',
-                                    style: TextStyle(
-                                        color: Colors.black, fontSize: 10)),
-                                TextSpan(
-                                    text:
-                                        'Análisis, Diseño, Implementación y Evaluación',
-                                    style: TextStyle(
-                                        color: Colors.blueAccent,
-                                        fontSize: 10)),
-                                TextSpan(
-                                    text: ' Recursos utilizados',
+                                    text: ' desarrollada en 4 fases: ',
                                     style: TextStyle(
                                         color: Colors.black, fontSize: 10)),
                                 TextSpan(
                                     text:
-                                        ' Mapa de Empatía, Escenarios de Uso, WhatsApp ',
+                                        ' Análisis, Diseño, Implementación y Evaluación ',
                                     style: TextStyle(
                                         color: Colors.blueAccent,
                                         fontSize: 10)),
+                                TextSpan(
+                                    text: ' Recursos utilizados  ',
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10)),
+                                TextSpan(
+                                    text:
+                                        ' Mapa de Empatía, Escenarios de Uso, WhatsApp \n\n',
+                                    style: TextStyle(
+                                        color: Colors.blueAccent,
+                                        fontSize: 10)),
+                                /**  imagen mapa de empatia**/
+
+                                /**  imagen semillero de investigacion**/
+
+                                TextSpan(
+                                    text: ' RESULTADOS ESPERADOS :\n\n',
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 15)),
+                                TextSpan(
+                                    text:
+                                        ' Desarrollo de un sistema de control de inventarios adaptado  a MIPYMES Manufactureras ',
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10)),
+                                /**  imagen de casos de uso poster**/
+
+                                TextSpan(
+                                    text: ' REFERENCIAS:\n\n',
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 15)),
+                                TextSpan(
+                                    text: ' Medina Medina, M. A. (2019). Propuesta de implementación de un sistema de control de inventarios para ' +
+                                        ' la “Ferretería Palacios” dedicada a la compra y venta de materiales de construcción ubicada en la ciudad ' +
+                                        ' de Quito (Bachelors thesis, Quito).Ambuludi Amaya, I. J. (2017). Propuesta de un sistema de control de ' +
+                                        ' inventarios, bajo NIIF para PYMES (sección 13) aplicado a la microempresa ARTIK dedicada a la comercialización ' +
+                                        ' de productos de refrigeración (Bachelors thesis, Quito: UCE. Montenegro Cuzco, A. S. (2016). Diseño de un sistema ' +
+                                        ' de control de inventarios, aplicando la sección 13 de la NIIF para PYMES en la empresa: Forma Industria de Muebles ' +
+                                        ' Formadel Cía. Ltda. ubicada en el Distrito Metropolitano de Quito (Bachelors thesis, Quito: UCE.).Rodríguez Polania, ' +
+                                        ' F. (2020). Estudio de proceso de automatización de inventario en empresas manufactureras (Doctoral dissertation, Universidad Santiago de Cali).',
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10)),
+                                TextSpan(
+                                    text: ' CONCLUCIONES:\n\n',
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 15)),
+                                TextSpan(
+                                    text: ' Se pretende ',
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10)),
+                                TextSpan(
+                                    text: ' comercializar el prototipo ',
+                                    style: TextStyle(
+                                        color: Colors.blueAccent,
+                                        fontSize: 10)),
+                                TextSpan(
+                                    text:
+                                        ' funcional del sistemas de información para garantizar a las empresas a tener sus inventarios al día.  ',
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10)),
                               ]),
                         ]),
                   ),
